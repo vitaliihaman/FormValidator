@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="css/form.css"/>
+</head>
+<body>
+<div id="wrapper">
+    <form id="myForm">
+        <div class="labelWrapper">
+            <div><label for="firstName">First Name</label></div>
+            <div><label for="lastName">Last Name</label></div>
+            <div><label for="email">Email</label></div>
+            <div><label for="age">Age</label></div>
+            <div><label >Gender</label></div>
+            <div><label for="phone">Phone number</label></div>
+            <div><label for="hobbies">Hobbies</label></div>
+            <div><label for="country">Country</label></div>
+            <div>What language do you speak?</div>
+
+        </div>
+        <div class="inputWrapper">
+            <div>
+                <input id="firstName" name="firstName" type="text" placeholder="Enter your first name"/>
+            </div>
+            <div>
+                <input id="lastName" name="lastName" type="text" placeholder="Enter your last name"/>
+            </div>
+            <div>
+                <input id='email' name="email" type="email" placeholder="Enter your email"/>
+            </div>
+            <div>
+                <input id="age" name="age" type="text"  placeholder="Enter your age"/>
+            </div>
+            <div>
+                <input name="gender" type="radio" value="male" checked/>Male
+                <input name="gender" type="radio" value="female"/>Female
+            </div>
+            <div>
+                <input id="phone" name="phone" type="text"  placeholder="Enter your phone number"/>
+            </div>
+            <div>
+                <textarea id="hobbies" name="hobbies" placeholder="Enter your hobbies" ></textarea>
+            </div>
+            <div>
+                <select id="country" name="country">
+                    <option value="">Choose your country...</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="USA">USA</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Finland">Finland</option>
+                </select>
+            </div>
+            <div id="language">
+                <label><input id="ru" name = "ru" type="checkbox" checked/>Russian</label>
+                <label><input id="eng" name = "eng" type="checkbox"/>English</label>
+                <label><input id="fr" name = "fr" type="checkbox"/>French</label>
+            </div>
+        </div>
+        <input type="submit" value="Submit"/>
+    </form>
+    <div id="square"></div>
+
+</div>
+
+<script src="script/form.js"></script>
+</body>
+</html>

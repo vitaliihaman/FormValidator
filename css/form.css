@@ -1,0 +1,62 @@
+#wrapper{
+    background-color: antiquewhite;
+    width: 640px;
+    height: 640px;
+    position: absolute;
+    margin: auto auto;
+}
+
+#myForm {
+    margin: 0 0;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 16px;
+}
+
+.labelWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30%;
+}
+
+.inputWrapper {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.inputWrapper>div, .inputWrapper>span, .labelWrapper>div {
+    width: 100%;
+    line-height: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+
+}
+
+
+input[type=text], input[type=email], textarea {
+    padding: 5px 5px 3px 3px;
+    width: 100%;
+}
+
+input[type=submit] {
+    /* align-self: flex-end;*/
+    position: absolute;
+    right: 165px;
+    top: 370px;
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+
+
+
+
